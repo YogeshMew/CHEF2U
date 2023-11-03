@@ -9,7 +9,7 @@ function NavbarLg({name}){
     <>
         <div className='w-full md:flex hidden justify-between shadow items-center py-3 lg:px-16 md:px-12 sm:px-8 px-2'>
             <Link to="/" className='flex items-center'>
-                <h1 className='font-bold text-xl font-mono'>Tiffin Wala</h1>
+                <h1 className='font-bold text-xl font-mono'>CHEFU</h1>
             </Link>
             <ul className='gap-4 flex items-center font-semibold '>
                 <li><Link to="/provider">Tiffin Providers</Link></li>

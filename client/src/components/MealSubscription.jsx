@@ -51,7 +51,7 @@ function MealSubscription() {
       "key": 'rzp_test_yu67T9aDVZ2U2O', 
       "amount": Number(totalAmount)* 100,
       "currency": "INR",
-      "name": "TiffinWala",
+      "name": "CHEF2U",
       "description": "Test Transaction",
       "image": "https://example.com/your_logo",
       "handler": function (response){

@@ -15,7 +15,7 @@ const initialData = require('./routes/initialData')
 const foodModel = require('./models/food')
 
 const app = express()
-const PORT=process.env.PORT || 3001;
+const PORT=process.env.PORT || 8000;
 
 env.config();
 app.use(cors({
@@ -40,11 +40,16 @@ var originsWhitelist = [
   }
 app.use(cors(corsOptions))
 
-mongoose.connect(process.env.MONGODB_CONNECTION,{
-    useNewUrlParser:true,
-    useUnifiedTopology:true
-}).then(()=>{
+// ,{
+//     useNewUrlParser:true,
+//     useUnifiedTopology:true
+// }
+
+mongoose.connect("mongodb+srv://yrmewara:yrmewara123@cluster0.8ijsljs.mongodb.net/Register?retryWrites=true&w=majority").then(()=>{
     console.log("DataBase Connected")
+}).catch((err)=>{
+    console.log("not coonected")
+    console.log(err.message)
 })
 const updateFood = async() =>{
     const foods = await foodModel.find()
