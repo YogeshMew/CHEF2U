@@ -1,4 +1,4 @@
-# TiffinManagment
+# CHEF2U
 
 ![Logo](https://res.cloudinary.com/dkgoet9em/image/upload/v1690174978/TiffinManagment/TiffinWala_aa7m54.png)
 TiffinManagment is a basic Tiffin Ordering Application that is build using the MERN Stack stands for MongoDB, ExpressJS, ReactJS, NodeJS.
